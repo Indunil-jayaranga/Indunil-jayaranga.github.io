@@ -1,0 +1,113 @@
+/* --- Google Fonts Import --- */
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap');
+
+/* --- CSS Variables (Style Guide) --- */
+:root {
+  --color-bg: #000000; /* True black background */
+  --color-bg-secondary: #141414; /* Dark charcoal for cards */
+  --color-text: #e0e0e0;
+  --color-text-secondary: #a0a0a0;
+  
+  /* New Cyber-themed Accent Colors */
+  --color-accent-blue: #00bfff; /* DeepSkyBlue */
+  --color-accent-purple: #8a2be2; /* BlueViolet */
+  --color-accent-gradient: linear-gradient(90deg, var(--color-accent-blue), var(--color-accent-purple));
+
+  --color-border: #333333;
+  --main-font: 'Public Sans', sans-serif;
+  --container-width: 1400px;
+  --border-radius: 12px;
+  --transition-speed: 0.3s;
+}
+
+/* --- Global Reset & Base Styles --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--main-font);
+  /* Dark Black Mixed Background */
+  background-color: var(--color-bg);
+  background-image: radial-gradient(ellipse at center, var(--color-bg-secondary), var(--color-bg));
+  background-attachment: fixed;
+  color: var(--color-text);
+  line-height: 1.6;
+
+  /* Add these lines for smoother font rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--color-accent-blue);
+  text-decoration: none;
+  transition: color var(--transition-speed) ease;
+}
+
+a:hover {
+  color: var(--color-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* --- Utility Classes --- */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.button-primary {
+  display: inline-block;
+  padding: 10px 28px;
+  background-image: var(--color-accent-gradient);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.button-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button-primary .button-icon {
+  opacity: 0;
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+.button-primary:hover .button-icon {
+  opacity: 1;
+  left: 15px;
+}
+
+.button-primary:hover {
+  padding-left: 48px;
+} 
