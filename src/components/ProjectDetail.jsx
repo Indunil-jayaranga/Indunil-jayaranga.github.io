@@ -66,7 +66,7 @@ const ProjectDetail = () => {
           {post.frontmatter.image && (
             <img 
               ref={imageRef}
-              src={post.frontmatter.image} 
+              src={`${import.meta.env.BASE_URL}${post.frontmatter.image.replace(/^\//, '')}`}
               alt={`Banner for ${post.frontmatter.title}`} 
               className={`article-banner fade-in-section ${imageInView ? 'is-visible' : ''}`}
             />

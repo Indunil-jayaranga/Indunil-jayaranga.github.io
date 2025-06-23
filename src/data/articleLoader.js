@@ -8,7 +8,7 @@ async function fetchArticles() {
   const articlesData = await Promise.all(
     articleFiles.map(async (filename) => {
       try {
-        const response = await fetch(`/readings/${filename}`);
+        const response = await fetch(`${import.meta.env.BASE_URL}readings/${filename}`);
         if (!response.ok) {
           throw new Error(`Failed to fetch ${filename}: Server responded with ${response.status} ${response.statusText}`);
         }

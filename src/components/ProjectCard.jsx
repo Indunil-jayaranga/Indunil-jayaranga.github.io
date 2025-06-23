@@ -7,7 +7,7 @@ const ProjectCard = ({ project }) => {
     <Link to={`/readings/${project.slug}`} className="project-card-link">
       <div className="project-card">
         <div className="project-card-image">
-          <img src={project.image} alt={project.title} />
+          <img src={`${import.meta.env.BASE_URL}${project.image.replace(/^\//, '')}`} alt={project.title} />
         </div>
         <div className="project-card-content">
           <h3 className="project-card-title">{project.title}</h3>

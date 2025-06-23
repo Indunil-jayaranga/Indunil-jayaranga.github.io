@@ -115,7 +115,7 @@
             </Link>
             </div>
             <div className="about-teaser-image">
-            <img src="/images/portrait.jpg" alt="A portrait of xINDUNIL" />
+            <img src={`${import.meta.env.BASE_URL}images/portrait.jpg`} alt="A portrait of xINDUNIL" />
             </div>
         </section>
 
