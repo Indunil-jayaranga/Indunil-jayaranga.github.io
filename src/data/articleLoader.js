@@ -1,7 +1,8 @@
 import matter from 'gray-matter';
 
 const articleFiles = [
-  'The-Art-of-Threat-Hunting.md'
+  'The-Art-of-Threat-Hunting.md',
+  'Understanding-Zero-Day-Exploits.md'
 ];
 
 async function fetchArticles() {
@@ -29,4 +30,4 @@ async function fetchArticles() {
   return articlesData.filter(article => article !== null);
 }
 
-export const articlesPromise = fetchArticles(); 
+export const articlesPromise = fetchArticles; 
