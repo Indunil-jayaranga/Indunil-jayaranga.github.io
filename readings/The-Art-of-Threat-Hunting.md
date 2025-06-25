@@ -96,7 +96,7 @@ Proactive monitoring of these Event IDs enables security teams to:
 - Strengthen overall security posture
 
 **Takeaway:**  
-Integrate these Event IDs into your SIEM or monitoring tools, set up alerts for anomalies, and regularly review logs to stay ahead of threats. Vigilance in event log monitoring is a critical line of defense in today’s evolving threat landscape.
+Integrate these Event IDs into your SIEM or monitoring tools, set up alerts for anomalies, and regularly review logs to stay ahead of threats. Vigilance in event log monitoring is a critical line of defense in today's evolving threat landscape.
 
 ---
 
