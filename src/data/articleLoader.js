@@ -1,8 +1,7 @@
 import matter from 'gray-matter';
 
 const articleFiles = [
-  'The-Art-of-Threat-Hunting.md',
-  'Understanding-Zero-Day-Exploits.md'
+  'The-Art-of-Threat-Hunting.md'
 ];
 
 async function fetchArticles() {
